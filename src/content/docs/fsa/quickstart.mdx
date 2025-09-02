@@ -510,7 +510,7 @@ Let's get started!
         cipher_suite = Fernet(key)
         encrypted_access_token = cipher_suite.encrypt(authResult['accessToken'].encode()).decode()
 
-        // setting up accessToken as HTTP-only cookie
+        # setting up accessToken as HTTP-only cookie
         response = make_response()
         response.set_cookie(
             'accessToken',
@@ -522,7 +522,7 @@ Let's get started!
             samesite='Strict'
         )
 
-        // Store the refreshToken in a secure place
+        # Store the refreshToken in a secure place
         ```
         </TabItem>
 
